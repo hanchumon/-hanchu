@@ -3,7 +3,7 @@ locals {
 
   name              = format("%s-alb", var.name)
   http_sg_name      = format("%s-http-sg", var.name)
-  target_group_name = "jenkins-tg"
+  target_group_name = "tg-"
 
   tags = merge(var.tags, { Owner = var.owner, Environment = var.env })
 
